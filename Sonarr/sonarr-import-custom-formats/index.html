@@ -9,10 +9,10 @@
 <meta content="TRaSH" name="author"/>
 <link href="https://trash-guides.info/Sonarr/sonarr-import-custom-formats/" rel="canonical"/>
 <link href="../../img/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-8.5.8" name="generator"/>
-<title>Sonarr import custom formats - TRaSH Guides</title>
-<link href="../../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
-<link href="../../assets/stylesheets/palette.815d1a91.min.css" rel="stylesheet"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
+<title>How to import Custom Formats - TRaSH Guides</title>
+<link href="../../assets/stylesheets/main.472b142f.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CEncode+Sans+Expanded:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Encode Sans Expanded"}</style>
@@ -23,14 +23,17 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../assets/javascripts/glightbox.min.js"></script></head>
-<body data-md-color-accent="blue" data-md-color-primary="indigio" data-md-color-scheme="slate" dir="ltr">
+<body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -60,14 +63,14 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Sonarr import custom formats
+              How to import Custom Formats
             
           </span>
 </div>
 </div>
 </div>
 <form class="md-header__option" data-md-component="palette">
-<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigio" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to light mode">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
 </label>
@@ -241,18 +244,18 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/Radarr-setup-custom-formats/">
-        How to setup Custom Formats
+<a class="md-nav__link" href="../../Radarr/radarr-setup-quality-profiles/">
+        How to setup Quality Profiles
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/radarr-setup-custom-formats-anime/">
-        How to setup Custom Formats-Anime
+<a class="md-nav__link" href="../../Radarr/radarr-setup-quality-profiles-anime/">
+        How to setup Quality Profiles (Anime)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../Radarr/radarr-setup-custom-formats-french/">
-        How to setup Custom Formats-French
+<a class="md-nav__link" href="../../Radarr/radarr-setup-quality-profiles-french-en/">
+        How to setup Quality Profiles (French)
       </a>
 </li>
 <li class="md-nav__item">
@@ -345,14 +348,134 @@
         Remote Path Mappings explained
       </a>
 </li>
-<li class="md-nav__item md-nav__item--nested">
-<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" id="__nav_3_7" type="checkbox"/>
+<li class="md-nav__item md-nav__item--active md-nav__item--nested">
+<input checked="" class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" id="__nav_3_7" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_7">
+          Sonarr v4 Beta
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Sonarr v4 Beta" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_7">
+<span class="md-nav__icon md-icon"></span>
+          Sonarr v4 Beta
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item md-nav__item--active">
+<input class="md-nav__toggle md-toggle" data-md-toggle="toc" id="__toc" type="checkbox"/>
+<label class="md-nav__link md-nav__link--active" for="__toc">
+          How to import Custom Formats
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<a class="md-nav__link md-nav__link--active" href="./">
+        How to import Custom Formats
+      </a>
+<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-to-copypaste-the-json-from-the-site">
+    How to Copy/Paste the JSON from the site
+  </a>
+<nav aria-label="How to Copy/Paste the JSON from the site" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#expand-the-json-for-br-disk">
+    Expand the JSON for BR-DISK
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#how-to-import-a-json-custom-format">
+    How to import a JSON Custom Format
+  </a>
+<nav aria-label="How to import a JSON Custom Format" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#in-sonarr">
+    In Sonarr
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#add-a-new-custom-format">
+    Add a new Custom Format
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#import-the-custom-format">
+    Import the Custom Format
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#paste-the-custom-format">
+    Paste the Custom Format
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#save-the-custom-format">
+    Save the Custom Format
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#setup-the-scores-in-your-quality-profile">
+    Setup the scores in your Quality Profile
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#start-adding-other-custom-formats-wisely">
+    Start adding other Custom Formats wisely
+  </a>
+<nav aria-label="Start adding other Custom Formats wisely" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#trash-sync">
+    TRaSH Sync
+  </a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sonarr-how-to-update-custom-formats/">
+        How to Update Custom Formats
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sonarr-setup-quality-profiles/">
+        How to setup Quality Profiles
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sonarr-setup-quality-profiles-anime/">
+        How to setup Quality Profiles-Anime
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../sonarr-collection-of-custom-formats/">
+        Collection of Custom Formats
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" id="__nav_3_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_8">
           Tips
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Tips" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_3_7">
+<label class="md-nav__title" for="__nav_3_8">
 <span class="md-nav__icon md-icon"></span>
           Tips
         </label>
@@ -924,9 +1047,6 @@
 <a class="md-content__button md-icon" href="https://github.com/TRaSH-/Guides/edit/master/docs/Sonarr/sonarr-import-custom-formats.md" title="Edit this page">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
-<div class="admonition danger">
-<p class="admonition-title"><strong>DISCLAIMER</strong><br/><br/>The current Sonarr v4 branch is for dev and testing purposes internally only.<br/>It is not supported nor officially released and still considered pre-alpha.<br/>It is not advised to run pre-alpha software in a production environment.<br/>Any issues encountered including glitches or data loss are not supported and you're on your own.<br/><br/><img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"> - What ever issue you find related to Sonarr <strong>DO NOT</strong> report it in Sonarr Discord. - <img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:"><br/><br/>Any questions related to the guide can be asked in TRaSH-Guides Discord.<br/><br/><code>perhaps</code> this disclaimer will be removed <code>soon(tm)</code></img></img></p>
-</div>
 <h1 id="how-to-import-custom-formats">How to import Custom Formats<a class="headerlink" href="#how-to-import-custom-formats" title="Permanent link"></a></h1>
 <p>Here I will try to explain how you can manually import Custom Formats for Sonarr v4+.</p>
 <div class="admonition info">
@@ -935,27 +1055,27 @@
 <h2 id="how-to-copypaste-the-json-from-the-site">How to Copy/Paste the JSON from the site<a class="headerlink" href="#how-to-copypaste-the-json-from-the-site" title="Permanent link"></a></h2>
 <p>In this example I will use the <a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank">BR-DISK</a> Custom Format, the one most people don't want to download anyway. And if you do, then you probably don't use any of the Starr apps or Plex, being both don't support it.</p>
 <p>Visit the <a href="/Sonarr/sonarr-collection-of-custom-formats/" rel="noopener noreferrer" target="_blank">Collection of Custom Formats</a> and select <a href="/Sonarr/sonarr-collection-of-custom-formats/#br-disk" rel="noopener noreferrer" target="_blank">BR-DISK</a> from the table.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-table-select-brdisk.png"><img alt="cf-table-select-brdisk" src="../images/cf-table-select-brdisk.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-table-select-brdisk.png"><img alt="cf-table-select-brdisk" src="../images/cf-table-select-brdisk.png"/></a></p>
 <h3 id="expand-the-json-for-br-disk">Expand the JSON for BR-DISK<a class="headerlink" href="#expand-the-json-for-br-disk" title="Permanent link"></a></h3>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-json-expand.png"><img alt="cf-json-expand" src="../images/cf-json-expand.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-json-expand.png"><img alt="cf-json-expand" src="../images/cf-json-expand.png"/></a></p>
 <p>Then click the copy icon in the top right corner</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-json-copy-paste.png"><img alt="cf-json-copy-paste" src="../images/cf-json-copy-paste.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-json-copy-paste.png"><img alt="cf-json-copy-paste" src="../images/cf-json-copy-paste.png"/></a></p>
 <h2 id="how-to-import-a-json-custom-format">How to import a JSON Custom Format<a class="headerlink" href="#how-to-import-a-json-custom-format" title="Permanent link"></a></h2>
 <h3 id="in-sonarr">In Sonarr<a class="headerlink" href="#in-sonarr" title="Permanent link"></a></h3>
 <p><code>Settings</code> =&gt; <code>Custom Formats</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-settings-cf.png"><img alt="cf-settings-cf" src="../images/cf-settings-cf.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-settings-cf.png"><img alt="cf-settings-cf" src="../images/cf-settings-cf.png"/></a></p>
 <h3 id="add-a-new-custom-format">Add a new Custom Format<a class="headerlink" href="#add-a-new-custom-format" title="Permanent link"></a></h3>
-<p>Then click on the <a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-plus-add-small.png"><img alt="cf-plus-add-small" src="../images/cf-plus-add-small.png"/></a> to add a new Custom Format.</p>
+<p>Then click on the <a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-plus-add-small.png"><img alt="cf-plus-add-small" src="../images/cf-plus-add-small.png"/></a> to add a new Custom Format.</p>
 <h3 id="import-the-custom-format">Import the Custom Format<a class="headerlink" href="#import-the-custom-format" title="Permanent link"></a></h3>
 <p>Followed by the <code>Import</code> in the lower left.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-import.png"><img alt="cf-import" src="../images/cf-import.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-import.png"><img alt="cf-import" src="../images/cf-import.png"/></a></p>
 <h3 id="paste-the-custom-format">Paste the Custom Format<a class="headerlink" href="#paste-the-custom-format" title="Permanent link"></a></h3>
 <p>Paste the <code>JSON</code> in the empty <code>Custom Format JSON</code> box (1) that you got from the <a href="/Sonarr/sonarr-collection-of-custom-formats/" rel="noopener noreferrer" target="_blank">Custom Format Collection</a> followed by the <code>Import</code> button (2).</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-import-cf.png"><img alt="cf-import-cf" src="../images/cf-import-cf.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-import-cf.png"><img alt="cf-import-cf" src="../images/cf-import-cf.png"/></a></p>
 <h3 id="save-the-custom-format">Save the Custom Format<a class="headerlink" href="#save-the-custom-format" title="Permanent link"></a></h3>
 <p>After selecting the <code>Import</code> button you will get a screen that has all the Custom Formats variables filled in correctly,
 all you need to do now is click on the <code>Save</code> button and you're done.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/cf-import-done.png"><img alt="cf-import-done" src="../images/cf-import-done.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/cf-import-done.png"><img alt="cf-import-done" src="../images/cf-import-done.png"/></a></p>
 <h3 id="setup-the-scores-in-your-quality-profile">Setup the scores in your Quality Profile<a class="headerlink" href="#setup-the-scores-in-your-quality-profile" title="Permanent link"></a></h3>
 <p>After you've added the Custom Formats, You will need to set it up in the Quality Profile you want to use/prefer to make use of the Custom Formats.
 How this is done is explained <a href="/Sonarr/sonarr-setup-custom-formats/#basics" rel="noopener noreferrer" target="_blank">HERE</a></p>
@@ -979,7 +1099,7 @@ How this is done is explained <a href="/Sonarr/sonarr-setup-custom-formats/#basi
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 8, 2022 08:04:13</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 24, 2022 19:03:51</span>
 </small>
 </div>
 <footer class="sponsorship">
@@ -998,7 +1118,7 @@ How this is done is explained <a href="/Sonarr/sonarr-setup-custom-formats/#basi
 </main>
 <footer class="md-footer">
 <nav aria-label="Footer" class="md-footer__inner md-grid">
-<a aria-label="Previous: Sonarr how to update custom formats" class="md-footer__link md-footer__link--prev" href="../sonarr-how-to-update-custom-formats/" rel="prev">
+<a aria-label="Previous: Remote Path Mappings explained" class="md-footer__link md-footer__link--prev" href="../Sonarr-remote-path-mapping/" rel="prev">
 <div class="md-footer__button md-icon">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
 </div>
@@ -1007,17 +1127,17 @@ How this is done is explained <a href="/Sonarr/sonarr-setup-custom-formats/#basi
 <span class="md-footer__direction">
                 Previous
               </span>
-              Sonarr how to update custom formats
+              Remote Path Mappings explained
             </div>
 </div>
 </a>
-<a aria-label="Next: Sonarr setup custom formats anime" class="md-footer__link md-footer__link--next" href="../sonarr-setup-custom-formats-anime/" rel="next">
+<a aria-label="Next: How to Update Custom Formats" class="md-footer__link md-footer__link--next" href="../sonarr-how-to-update-custom-formats/" rel="next">
 <div class="md-footer__title">
 <div class="md-ellipsis">
 <span class="md-footer__direction">
                 Next
               </span>
-              Sonarr setup custom formats anime
+              How to Update Custom Formats
             </div>
 </div>
 <div class="md-footer__button md-icon">
@@ -1055,5 +1175,5 @@ How this is done is explained <a href="/Sonarr/sonarr-setup-custom-formats/#basi
 </div>
 <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>

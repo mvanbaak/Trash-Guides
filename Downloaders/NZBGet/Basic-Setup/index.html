@@ -9,10 +9,10 @@
 <meta content="TRaSH" name="author"/>
 <link href="https://trash-guides.info/Downloaders/NZBGet/Basic-Setup/" rel="canonical"/>
 <link href="../../../img/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.4.2, mkdocs-material-8.5.8" name="generator"/>
+<meta content="mkdocs-1.4.2, mkdocs-material-8.5.10" name="generator"/>
 <title>Basic-Setup - TRaSH Guides</title>
-<link href="../../../assets/stylesheets/main.20d9efc8.min.css" rel="stylesheet"/>
-<link href="../../../assets/stylesheets/palette.815d1a91.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/main.472b142f.min.css" rel="stylesheet"/>
+<link href="../../../assets/stylesheets/palette.08040f6c.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Noto+Sans:300,300i,400,400i,700,700i%7CEncode+Sans+Expanded:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Noto Sans";--md-code-font:"Encode Sans Expanded"}</style>
@@ -23,14 +23,17 @@
 <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
 <link href="../../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
             html.glightbox-open { overflow: initial; height: 100%; }
-            .gdesc-inner { font-size: 0.75rem; }
             .gslide-title { margin-top: 0px; user-select: text; }
             .gslide-desc { color: #666; user-select: text; }
             .gslide-image img { background: white; }
             
                 .gscrollbar-fixer { padding-right: 15px; }
+                .gdesc-inner { font-size: 0.75rem; }
+                body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+                body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+                body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
                 </style><script src="../../../assets/javascripts/glightbox.min.js"></script></head>
-<body data-md-color-accent="blue" data-md-color-primary="indigio" data-md-color-scheme="slate" dir="ltr">
+<body data-md-color-accent="blue" data-md-color-primary="indigo" data-md-color-scheme="slate" dir="ltr">
 <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
 <input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
@@ -67,7 +70,7 @@
 </div>
 </div>
 <form class="md-header__option" data-md-component="palette">
-<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigio" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
+<input aria-label="Switch to light mode" class="md-option" data-md-color-accent="blue" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-primary="indigo" data-md-color-scheme="slate" id="__palette_1" name="__palette" type="radio"/>
 <label class="md-header__button md-icon" for="__palette_2" hidden="" title="Switch to light mode">
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 7H7a5 5 0 0 0-5 5 5 5 0 0 0 5 5h10a5 5 0 0 0 5-5 5 5 0 0 0-5-5m0 8a3 3 0 0 1-3-3 3 3 0 0 1 3-3 3 3 0 0 1 3 3 3 3 0 0 1-3 3Z"></path></svg>
 </label>
@@ -241,18 +244,18 @@
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/Radarr-setup-custom-formats/">
-        How to setup Custom Formats
+<a class="md-nav__link" href="../../../Radarr/radarr-setup-quality-profiles/">
+        How to setup Quality Profiles
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/radarr-setup-custom-formats-anime/">
-        How to setup Custom Formats-Anime
+<a class="md-nav__link" href="../../../Radarr/radarr-setup-quality-profiles-anime/">
+        How to setup Quality Profiles (Anime)
       </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="../../../Radarr/radarr-setup-custom-formats-french/">
-        How to setup Custom Formats-French
+<a class="md-nav__link" href="../../../Radarr/radarr-setup-quality-profiles-french-en/">
+        How to setup Quality Profiles (French)
       </a>
 </li>
 <li class="md-nav__item">
@@ -348,11 +351,51 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_7" id="__nav_3_7" type="checkbox"/>
 <label class="md-nav__link" for="__nav_3_7">
+          Sonarr v4 Beta
+          <span class="md-nav__icon md-icon"></span>
+</label>
+<nav aria-label="Sonarr v4 Beta" class="md-nav" data-md-level="2">
+<label class="md-nav__title" for="__nav_3_7">
+<span class="md-nav__icon md-icon"></span>
+          Sonarr v4 Beta
+        </label>
+<ul class="md-nav__list" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sonarr/sonarr-import-custom-formats/">
+        How to import Custom Formats
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sonarr/sonarr-how-to-update-custom-formats/">
+        How to Update Custom Formats
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sonarr/sonarr-setup-quality-profiles/">
+        How to setup Quality Profiles
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sonarr/sonarr-setup-quality-profiles-anime/">
+        How to setup Quality Profiles-Anime
+      </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="../../../Sonarr/sonarr-collection-of-custom-formats/">
+        Collection of Custom Formats
+      </a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item md-nav__item--nested">
+<input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3_8" id="__nav_3_8" type="checkbox"/>
+<label class="md-nav__link" for="__nav_3_8">
           Tips
           <span class="md-nav__icon md-icon"></span>
 </label>
 <nav aria-label="Tips" class="md-nav" data-md-level="2">
-<label class="md-nav__title" for="__nav_3_7">
+<label class="md-nav__title" for="__nav_3_8">
 <span class="md-nav__icon md-icon"></span>
           Tips
         </label>
@@ -1009,6 +1052,9 @@
 <svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"></path></svg>
 </a>
 <h1 id="nzbget-basic-setup">NZBGet - Basic Setup<a class="headerlink" href="#nzbget-basic-setup" title="Permanent link"></a></h1>
+<div class="admonition danger">
+<p class="admonition-title">NZBGet development has been officially abandoned by the developer <img alt="‼" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/203c.svg" title=":bangbang:"/></p>
+</div>
 <!-- BEGIN INCLUDE ../../../includes/downloaders/basic-setup.md -->
 <p>This basic example is based on the use of docker images</p>
 <div class="admonition tip">
@@ -1056,7 +1102,7 @@
 </tbody>
 </table>
 <h2 id="paths">PATHS<a class="headerlink" href="#paths" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/paths.png"><img alt="!paths" src="../images/paths.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/paths.png"><img alt="!paths" src="../images/paths.png"/></a></p>
 <p>I will only explain the so called most important paths.</p>
 <table>
 <thead>
@@ -1097,7 +1143,7 @@
 </tbody>
 </table>
 <h2 id="news-servers">NEWS-SERVERS<a class="headerlink" href="#news-servers" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/newsservers.png"><img alt="!newsservers" src="../images/newsservers.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/newsservers.png"><img alt="!newsservers" src="../images/newsservers.png"/></a></p>
 <table>
 <thead>
 <tr>
@@ -1145,7 +1191,7 @@
 </tbody>
 </table>
 <h2 id="categories">CATEGORIES<a class="headerlink" href="#categories" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/categories.png"><img alt="!categories" src="../images/categories.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/categories.png"><img alt="!categories" src="../images/categories.png"/></a></p>
 <table>
 <thead>
 <tr>
@@ -1173,29 +1219,29 @@
 </tbody>
 </table>
 <h2 id="incoming-nzbs">INCOMING NZBS<a class="headerlink" href="#incoming-nzbs" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/incoming.png"><img alt="!incoming" src="../images/incoming.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/incoming.png"><img alt="!incoming" src="../images/incoming.png"/></a></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><code>AppendCategoryDir</code>: Create subdirectory with category-name in destination-directory.</p>
 </div>
 <h2 id="download-queue">DOWNLOAD QUEUE<a class="headerlink" href="#download-queue" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/queue.png"><img alt="!queue" src="../images/queue.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/queue.png"><img alt="!queue" src="../images/queue.png"/></a></p>
 <div class="admonition caution">
 <p class="admonition-title">Caution</p>
 <p><code>WriteBuffer</code>: If you're low on memory don't set this to high.</p>
 </div>
 <h2 id="logging">LOGGING<a class="headerlink" href="#logging" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/logging.png"><img alt="!logging" src="../images/logging.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/logging.png"><img alt="!logging" src="../images/logging.png"/></a></p>
 <h2 id="check-and-repair">CHECK AND REPAIR<a class="headerlink" href="#check-and-repair" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/checkAndRepair.png"><img alt="!checkAndRepair" src="../images/checkAndRepair.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/checkAndRepair.png"><img alt="!checkAndRepair" src="../images/checkAndRepair.png"/></a></p>
 <h2 id="unpack">UNPACK<a class="headerlink" href="#unpack" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/unpack.png"><img alt="!unpack" src="../images/unpack.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/unpack.png"><img alt="!unpack" src="../images/unpack.png"/></a></p>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
 <p><code>DirectUnpack</code>: This might lower your download speed but the overall time could be faster. (disable on low powered devices)</p>
 </div>
 <h2 id="extension-scripts">EXTENSION SCRIPTS<a class="headerlink" href="#extension-scripts" title="Permanent link"></a></h2>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/extScripts.png"><img alt="!extScripts" src="../images/extScripts.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/extScripts.png"><img alt="!extScripts" src="../images/extScripts.png"/></a></p>
 <p>Depending if you're using some NZBGet script here you can change the order or when it should be used</p>
 <hr/>
 <h2 id="recommended-sonarrradarr-settings">Recommended Sonarr/Radarr Settings<a class="headerlink" href="#recommended-sonarrradarr-settings" title="Permanent link"></a></h2>
@@ -1205,16 +1251,16 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
 <details class="example">
 <summary>Sonarr</summary>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-settings-download-clients.png"><img alt="!Sonarr: Settings =&gt; Download Clients" src="../images/sonarr-settings-download-clients.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-settings-download-clients.png"><img alt="!Sonarr: Settings =&gt; Download Clients" src="../images/sonarr-settings-download-clients.png"/></a></p>
 <p>Make sure you check both boxes under <code>Completed Download Handling</code> at step 3.</p>
 <p>Select NZBGet at step 4 and scroll down to the bottom of the new window where it says <code>Completed Download Handling</code> and check both boxes.</p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/sonarr-download-clients-nzbget.png"><img alt="!Sonarr: Download Clients - SABnzbd" src="../images/sonarr-download-clients-nzbget.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/sonarr-download-clients-nzbget.png"><img alt="!Sonarr: Download Clients - SABnzbd" src="../images/sonarr-download-clients-nzbget.png"/></a></p>
 </details>
 <h3 id="radarr">Radarr<a class="headerlink" href="#radarr" title="Permanent link"></a></h3>
 <details class="example">
 <summary>Radarr</summary>
 <p><code>Settings</code> =&gt; <code>Download Clients</code></p>
-<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../images/radarr-settings-download-clients.png"><img alt="!Radarr: Settings =&gt; Download Clients" src="../images/radarr-settings-download-clients.png"/></a></p>
+<p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../images/radarr-settings-download-clients.png"><img alt="!Radarr: Settings =&gt; Download Clients" src="../images/radarr-settings-download-clients.png"/></a></p>
 <p>Make sure you check both boxes under <code>Completed Download Handling</code> at step 3,</p>
 <p>and both boxes under <code>Failed Download Handling</code> at step 4.</p>
 </details>
@@ -1232,7 +1278,7 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
 <small>
     
       Last update:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">October 10, 2022 15:29:13</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 27, 2022 16:48:53</span>
 </small>
 </div>
 <footer class="sponsorship">
@@ -1308,5 +1354,5 @@ Being that Sonarr/Radarr only looks at the last xx amount in the queue/history.<
 </div>
 <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.instant", "navigation.tabs", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
 <script src="../../../assets/javascripts/bundle.d6c3db9e.min.js"></script>
-<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom"});})</script></body>
+<script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
 </html>
